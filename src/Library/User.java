@@ -32,4 +32,6 @@ public abstract class User {
     }
 
     abstract public void menu(Database database, User user);
+
+    abstract public String toString();
 }

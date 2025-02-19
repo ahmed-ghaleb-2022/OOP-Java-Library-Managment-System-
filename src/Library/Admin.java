@@ -34,7 +34,6 @@ public class Admin extends User{
         };
     }
 
-
     @Override
     public void menu(Database database, User user){
         System.out.println("1. View Books");
@@ -48,6 +47,12 @@ public class Admin extends User{
         Scanner s = new Scanner(System.in);
         int n = s.nextInt();
         this.operation[n-1].oper(database,user);
-        s.close();
+        //s.close();
     }
+
+
+    public String toString(){
+        return name + "<N/>" + email + "<N/>"  + phoneNumber + "<N/>" + "Admin";
+    }
+
 }

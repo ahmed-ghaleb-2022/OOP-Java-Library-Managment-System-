@@ -1,5 +1,9 @@
-package Library;
+import Library.Admin;
+import Library.Database;
+import Library.NormalUser;
+import Library.User;
 
+import java.io.File;
 import java.util.Scanner;
 
 public class Main {
@@ -9,6 +13,7 @@ public class Main {
 
     public static void main(String[] args) {
 
+        System.out.println(new File(".").getAbsolutePath());
         database = new Database();
         System.out.println("Welcome to Library Management System!");
 
